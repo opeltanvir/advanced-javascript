@@ -10,7 +10,19 @@ const normalPerson = {
         return this.salary;
     }
 }
-normalPerson.chargeBill(150);
 
-console.log(normalPerson.salary);
+const heroPerson ={
+    firstName: 'hero',
+    lastName: 'balam',
+    salary: 2500
+}
+const friendlyPerson ={
+    firstName: 'hero',
+    lastName: 'golam',
+    salary: 2500
+}
+
+const heroBillCharge = normalPerson.chargeBill.bind(heroPerson);
+heroBillCharge(200);
+
 
